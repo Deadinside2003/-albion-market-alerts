@@ -26,7 +26,7 @@ def get_prices():
     url = (
         f"{BASE}/api/v2/stats/prices/"
         f"{','.join(ITEMS)}.json"
-        f"?locations={','.join(CITIES)}"
+        f"?locations={','.join(CITIES).replace(' ', '%20')}"
     )
 
     with urllib.request.urlopen(url, timeout=30) as response:
