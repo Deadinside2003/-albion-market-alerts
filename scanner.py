@@ -12,7 +12,9 @@ ITEMS = [
     "T6_MOUNT_HORSE",
     "T6_MOUNT_ARMORED_HORSE",
 ]
-
+HOME_CITY = "Lymhurst"
+TRAVEL_PROFIT_THRESHOLD = 30000
+TRANSPORT_COST_PER_HORSE = 0
 CITIES = [
     "Lymhurst",
     "Bridgewatch",
@@ -21,6 +23,8 @@ CITIES = [
     "Thetford",
     "Caerleon",
 ]
+RIDING_CRAFT_COST = 0
+ARMORED_CRAFT_COST = 0
 
 def get_prices():
     items = ",".join(ITEMS)
